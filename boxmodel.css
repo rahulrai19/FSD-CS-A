@@ -1,0 +1,23 @@
+/* body{
+    margin: 10;
+    display: flex;
+    box-sizing: content-box;
+}
+.box1{
+    display: flex;
+    width: 200px;
+    border: 5px solid black;
+    padding: 10px;
+    height: 100px;
+    background-color: lightblue;
+}
+.box2{
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    border: 5px solid black;
+    margin:10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+} */
