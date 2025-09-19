@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card" id="card1" style="width: 280px; height: 200px; background-color: #f0f0f0; border-radius: 10px; padding: 10px; margin: 10px; display: flex; flex-direction: row">
+       
+        <img src="https://picsum.photos/200/300" alt="card1" style="border-radius: 100%; width: 60px; height: 60px;">
+        <h1>Counter App</h1>
+        <div>
+        <p id="counter">0</p>
+        <button onclick="btn1()" style="width: 20px; height: 20px; align-self: center;">+</button>
+        <button onclick="btn2()" style="width: 20px; height: 20px; align-self: center;padding-left:10px;">-</button>
+       </div>
+    </div>
+    <script>
+        let count = 0;
+        function btn1(){
+            if(count<10){
+                count++;
+                document.getElementById("counter").innerHTML = count;
+            }
+            else{
+                alert("Count is 10");
+            }
+        }
+        function btn2(){
+            if(count>0){
+                count--;
+                document.getElementById("counter").innerHTML = count;
+            }
+            else{
+                alert("Count is 0");
+            }
+
+        }
+
+
+    
+    </script>
+</body>
+</html>
