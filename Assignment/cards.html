@@ -6,15 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="card" id="card1" style="width: 280px; height: 200px; background-color: #f0f0f0; border-radius: 10px; padding: 10px; margin: 10px; display: flex; flex-direction: row">
+    <div class="card" id="card1" style="width: auto; height: 200px; background-color: #f0f0f0; border-radius: 10px; padding: 10px; margin: 10px; display: flex;">
        
-        <img src="https://picsum.photos/200/300" alt="card1" style="border-radius: 100%; width: 60px; height: 60px;">
-        <h1>Counter App</h1>
-        <div>
-        <p id="counter">0</p>
-        <button onclick="btn1()" style="width: 20px; height: 20px; align-self: center;">+</button>
-        <button onclick="btn2()" style="width: 20px; height: 20px; align-self: center;padding-left:10px;">-</button>
-       </div>
+        <img src="https://picsum.photos/200/300" alt="card1" style="border-radius: 50%; width: 60px; height: 60px;">
+        <h1 style="padding-left: 5px;;">Counter</h1>
+        <div style="display: flex; flex-direction: row;">
+            <button onclick="btn2()" style="width: 50px; height: 20px; align-self: center;background-color: rgb(235, 67, 67);color: rgb(23, 150, 29);border-radius: 5px;">-</button>
+            <div style="width: 40px;height: 50px;align-items: center;">
+            <p id="counter" style=" align-items: center;color: blue; font-size: 50px;">0</p>
+            </div>
+            <br>
+        <button onclick="btn1()" style="width: 50px; height: 20px;align-self: center;background-color: rgb(0, 255, 17);color: rgb(221, 16, 16);border-radius: 5px;">+</button>
+        </div>
     </div>
     <script>
         let count = 0;

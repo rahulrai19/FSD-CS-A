@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: #d9a3a3;
+        }
+        th{
+            background-color: #a3d51a;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>IP</th>
+                <th>MAC</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+<script>
+    const url = "https://dummyjson.com/users?limit=2";
+    const f1 = async () => {
+        const res = await fetch(url);
+        const jsondata = await res.json();
+        jsondata.users.forEach(data => {
+            const row = document.createElement("tr");
+            const col1=document.createElement("td");
+            col1.innerText = data.firstName;
+            row.appendChild(col1);
+
+            const col2 = document.createElement("td");
+            col2.innerText = data.email;
+            row.appendChild(col2);
+            const col3 = document.createElement("td");
+            col3.innerText = data.ip;
+            row.appendChild(col3);
+            const col4 = document.createElement("td");
+            col4.innerText = data.macAddress;
+            row.appendChild(col4);
+            const col5 = document.createElement("td");
+            col5.innerText = data.age;
+            row.appendChild(col5);
+            // Append the row to the table body
+            document.querySelector("tbody").appendChild(row);
+
+        });
+    }
+    f1();
+</script>
+</html>
