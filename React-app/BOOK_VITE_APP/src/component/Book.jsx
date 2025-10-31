@@ -19,10 +19,10 @@ const Book = () =>{
            <h3>Title:Physics</h3>
            <h4>Price:₹450</h4>
            <div>
-            <button onClick={decrement}>-
+            <button onClick={decrement} style={{width:25,height:25}}>-
             </button>
             <span>{count}</span>
-            <button onClick={increment}>+</button>
+            <button onClick={increment} style={{width:25,height:25}}>+</button>
            </div>
            <button onClick={handleAddtoCart}>Add to Cart</button>
         </div>
