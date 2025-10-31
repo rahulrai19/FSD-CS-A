@@ -5,7 +5,7 @@ const Header = ()=>{
     return(
         <>
         <div className="Header">
-            <h3>Book Store</h3>
+            <center><h3>Book Store</h3></center>
 
         </div>
         

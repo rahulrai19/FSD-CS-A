@@ -10,6 +10,7 @@ const App = () => {
       <Header/>
       <Book />
       <Book />
+      <Book />
 
     </div>
   )
